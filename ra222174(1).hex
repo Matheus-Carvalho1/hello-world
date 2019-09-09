@@ -1,0 +1,50 @@
+105 34
+106 A
+000 09 106 0B 105 #coloca 10 no MQ e multiplica por X 
+001 0A 000 21 105 #passa gx =y do MQ para AC e guarda na memoria
+002 01 105 15 000 #coloca y no AC e divide por 2
+003 21 106 01 105#passa y/2 =k do AC para memoria e puxa o y para o AC
+004 0C 106 0A 000#divide y por k e passa para o AC 
+005 05 106 15 000#adiciona k e divide por 2
+006 21 106 01 105#guarda o k' no lugar do k e puxa o y no AC
+#2 iteracao
+007 0C 106 0A 000
+008 05 106 15 000
+009 21 106 01 105
+#3 iteracao
+00A 0C 106 0A 000
+00B 05 106 15 000
+00C 21 106 01 105
+#4 iteracao
+00D 0C 106 0A 000
+00E 05 106 15 000
+00F 21 106 01 105
+#5 iteracao
+010 0C 106 0A 000
+011 05 106 15 000
+012 21 106 01 105
+#6 iteracao
+013 0C 106 0A 000
+014 05 106 15 000
+015 21 106 01 105
+#7 iteracao
+016 0C 106 0A 000
+017 05 106 15 000
+018 21 106 01 105
+#8 iteracao
+019 0C 106 0A 000
+01A 05 106 15 000
+01B 21 106 01 105
+#9 iteracao
+01C 0C 106 0A 000
+01D 05 106 15 000
+01E 21 106 01 105
+#10 iteracao
+01F 0C 106 0A 000
+020 05 106 15 000
+021 21 106 01 105
+#11 iteracao
+022 0C 106 0A 000
+023 05 106 15 000
+#fim
+024 0D 400 00 000
